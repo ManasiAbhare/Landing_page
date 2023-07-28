@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-store"></i>
+                <h1>FlowerCart</h1>
+            </div>
+            <ul>
+                <li class="active"><a href="a">Home</a></li>
+                <li><a href="a">About</a></li>
+                <li><a href="a">Shop</a></li>
+                <li><a href="a">Contact</a></li>
+                <li><a href="a"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="div-text">
+                <span>Good Vibes</span>
+                <h3>Flowery Expression Convey</h3>
+                <h1>Your Emotion</h1>
+                <p>FlowerCart is india's top flower shop that help you<br>celebrate special moments by delivaring fabulous bouquet to your loved ones<br>you can find throughtful beautiful bouquet for all special occasion</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+            <div class="div-img">
+                <img id="big-img" src="h.jpg" alt="">
+            </div>
+            <div class="small-img">
+                <img onclick="myBouquet(this.src)" src="f.jpg" alt="">
+                <img onclick="myBouquet(this.src)" src="v.jpg" alt="">
+                <img onclick="myBouquet(this.src)" src="s.jpg" alt="">
+                <img onclick="myBouquet(this.src)" src="n.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        let bigImage = document.getElementById('big-img');
+
+        function myBouquet(bouquet) {
+            bigImage.src = bouquet
+        }
+    </script>
+
+</body>
+
+</html>
